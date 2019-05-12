@@ -1,0 +1,32 @@
+@import '_normalize';
+@import '_reset';
+
+@mixin tr {
+	transition: all .3s ease-in;
+}
+@mixin my_pos ($top: 50%, $left: 50%, $tx: -50%, $ty: -50%) {
+	position: absolute;
+	top: $top;
+	left: $left;
+	transform: translate($tx, $ty);
+}
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+	font-size: 1.8rem;
+	line-height: 1.6;
+	color: #333;
+}
+
