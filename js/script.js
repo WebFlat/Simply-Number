@@ -1,4 +1,8 @@
 ;(function() {
+    'use strict';
+
+
+
     var num1 = prompt('Enter first number: ');
     var num2 = prompt('Enter second number more than first number: ');
     var validation = (num2 > num1 && num1 > 1);
@@ -11,7 +15,7 @@
         }
     }
 
-    if (!validation || (isNaN(+num1) || isNaN(+num2))) {
+    if (!validation || isNaN(+num1) || isNaN(+num2)) {
         alert('Enter right number!!!');
     } else {
         isSimply();
